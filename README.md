@@ -4,6 +4,10 @@ A high-fidelity, interactive 3D solar system simulation built with React Three F
 
 ![Twenty4Orbit solar system overview](docs/screenshot.jpg)
 
+![Twenty4Orbit inner solar system](docs/orbits.jpg)
+
+![Twenty4Orbit Earth close-up](docs/earth.jpg)
+
 ## 🚀 Key Features
 
 *   **Astrophysical Accuracy:** Driven by Keplerian physics, planets follow true elliptical orbits with accurate semi-major axes, eccentricities, and real-world axial tilts.
