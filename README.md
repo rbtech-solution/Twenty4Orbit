@@ -2,6 +2,8 @@
 
 A high-fidelity, interactive 3D solar system simulation built with React Three Fiber. Twenty4Orbit bridges the gap between cinematic visualizations and hardcore astrophysical data, offering a responsive dashboard to explore our cosmic neighborhood in real-time.
 
+![Twenty4Orbit solar system overview](docs/screenshot.jpg)
+
 ## 🚀 Key Features
 
 *   **Astrophysical Accuracy:** Driven by Keplerian physics, planets follow true elliptical orbits with accurate semi-major axes, eccentricities, and real-world axial tilts.
