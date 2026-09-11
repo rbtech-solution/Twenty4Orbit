@@ -13,7 +13,7 @@ export default function CityDataCard() {
   if (!city) return null;
 
   return (
-    <aside className="pointer-events-auto w-80 rounded-xl border border-white/20 bg-black/50 p-6 text-white shadow-2xl backdrop-blur-lg">
+    <aside className="pointer-events-auto w-full rounded-xl border border-white/20 bg-black/50 p-4 text-white shadow-2xl backdrop-blur-lg md:p-6">
       <p className="text-[10px] uppercase tracking-[0.22em] text-white/40">
         Surface site
       </p>

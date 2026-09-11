@@ -47,7 +47,7 @@ export default function CameraController({
     } else {
       controls.minDistance = 0.08;
       controls.zoomSpeed = 1.2;
-      controls.enablePan = true;
+      controls.enablePan = false;
     }
 
     if (!selectedPlanet) {

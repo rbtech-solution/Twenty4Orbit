@@ -183,7 +183,7 @@ export default function Scene() {
         key={canvasKey}
         camera={{ position: [0, 2, 250], fov: 45 }}
         shadows
-        dpr={[1, 1.25]}
+        dpr={[1, 1.5]}
         gl={(defaultProps) =>
           createSceneRenderer(defaultProps, () => setFailed(true))
         }
@@ -213,6 +213,7 @@ export default function Scene() {
           ref={cameraControlsRef}
           enableDamping
           dampingFactor={0.08}
+          enablePan={false}
           minDistance={0.08}
           maxDistance={400}
         />

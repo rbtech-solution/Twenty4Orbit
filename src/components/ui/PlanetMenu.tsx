@@ -9,7 +9,7 @@ export default function PlanetMenu() {
   const setHoveredPlanet = useStore((state) => state.setHoveredPlanet);
 
   return (
-    <nav className="pointer-events-auto absolute top-1/2 left-6 flex -translate-y-1/2 flex-col gap-2 rounded-r-xl border-r border-white/10 bg-black/40 p-4 backdrop-blur-md">
+    <nav className="pointer-events-auto absolute top-1/2 left-2 z-40 flex max-h-[45vh] -translate-y-1/2 flex-col gap-1 overflow-y-auto rounded-r-xl border-r border-white/10 bg-black/40 p-2 backdrop-blur-md md:left-6 md:max-h-none md:gap-2 md:p-4">
       {planets.map((planet) => {
         const isActive = focusedPlanet === planet.name;
 
@@ -23,7 +23,7 @@ export default function PlanetMenu() {
             }}
             onMouseEnter={() => setHoveredPlanet(planet.name)}
             onMouseLeave={() => setHoveredPlanet(null)}
-            className={`flex items-center gap-3 px-4 py-2 text-left uppercase tracking-[0.2em] text-xs font-medium transition-all duration-300 hover:translate-x-2 ${
+            className={`flex items-center gap-2 px-2 py-1.5 text-left text-[10px] font-medium uppercase tracking-[0.2em] transition-all duration-300 hover:translate-x-2 md:gap-3 md:px-4 md:py-2 md:text-xs ${
               isActive
                 ? "border-l-2 border-white bg-gradient-to-r from-white/20 to-transparent text-white"
                 : "border-l-2 border-transparent text-gray-400 hover:text-white"

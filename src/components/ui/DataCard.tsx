@@ -108,7 +108,7 @@ export default function DataCard() {
   const activeLayer = layers.length > 0 ? getActiveLayer(layers, peelValue) : null;
 
   return (
-    <aside className="pointer-events-auto w-80 rounded-2xl border border-white/20 bg-black/50 p-6 text-white shadow-2xl backdrop-blur-md">
+    <aside className="pointer-events-auto w-full rounded-2xl border border-white/20 bg-black/50 p-4 text-white shadow-2xl backdrop-blur-md md:p-6">
       <p className="text-xs uppercase tracking-[0.2em] text-white/50">Dossier</p>
       <h2 className="mt-2 text-3xl font-bold tracking-tight">{focusedPlanet}</h2>
 

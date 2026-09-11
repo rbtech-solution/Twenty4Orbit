@@ -18,7 +18,7 @@ export default function CountryDataCard() {
   ];
 
   return (
-    <aside className="pointer-events-auto w-80 rounded-xl border border-cyan-500/25 bg-black/55 p-6 text-white shadow-[0_0_40px_rgba(34,211,238,0.1)] backdrop-blur-lg">
+    <aside className="pointer-events-auto w-full rounded-xl border border-cyan-500/25 bg-black/55 p-4 text-white shadow-[0_0_40px_rgba(34,211,238,0.1)] backdrop-blur-lg md:p-6">
       <p className="text-[10px] uppercase tracking-[0.22em] text-cyan-400/70">
         Country dossier
       </p>

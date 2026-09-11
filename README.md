@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Twenty4Orbit 🪐
 
-## Getting Started
+A high-fidelity, interactive 3D solar system simulation built with React Three Fiber. Twenty4Orbit bridges the gap between cinematic visualizations and hardcore astrophysical data, offering a responsive dashboard to explore our cosmic neighborhood in real-time.
 
-First, run the development server:
+## 🚀 Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+*   **Astrophysical Accuracy:** Driven by Keplerian physics, planets follow true elliptical orbits with accurate semi-major axes, eccentricities, and real-world axial tilts.
+*   **Volumetric & Custom Shaders:** Features custom Fresnel shaders for realistic atmospheric scattering, dynamic cloud layers that cast shadows on oceans, and mathematically driven galaxy dust clouds.
+*   **High-Performance Rendering:** Handles massive graphical loads—including 8K photorealistic planetary maps and a seamless 50,000-instance asteroid belt—maintaining 60fps via WebGL InstancedMesh optimization.
+*   **Interactive Dashboard:** A sleek, mobile-responsive UI featuring dynamic time-scaling (1 hour/sec to 1 year/sec), planetary layer toggles (geopolitical borders, clouds), and mathematically translated 3D surface pins for real-world coordinates.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+*   **Frontend Framework:** Next.js, React, Tailwind CSS
+*   **3D Rendering Engine:** Three.js, React Three Fiber, `@react-three/drei`
+*   **State Management:** Zustand (for complex UI-to-Canvas state bridging)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ⚙️ Local Setup
 
-## Learn More
+To run this simulation on your local machine:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone the repository: `git clone https://github.com/rbtech-solution/Twenty4Orbit.git`
+2. Install the necessary dependencies: `npm install`
+3. Boot up the development server: `npm run dev` and visit `localhost:3000`

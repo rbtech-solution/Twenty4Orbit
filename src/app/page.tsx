@@ -28,15 +28,19 @@ export default function Home() {
           <button
             type="button"
             onClick={() => setFocusedPlanet(null)}
-            className="pointer-events-auto absolute top-8 left-8 rounded-full border border-white/20 bg-black/60 px-4 py-2 text-sm tracking-wide text-white backdrop-blur hover:bg-white/10"
+            className="pointer-events-auto absolute top-28 left-4 z-[60] rounded-full border border-white/20 bg-black/60 px-3 py-1.5 text-xs tracking-wide text-white backdrop-blur hover:bg-white/10 md:top-8 md:left-8 md:px-4 md:py-2 md:text-sm"
           >
             Back to Solar System
           </button>
         )}
 
         {introStarted && <PlanetMenu />}
-        {introStarted && <TimeController />}
-        <div className="pointer-events-none absolute top-10 right-10 z-50 flex max-h-[90vh] flex-col gap-6 overflow-y-auto">
+        {introStarted && (
+          <div className="absolute bottom-4 left-1/2 z-50 flex w-max max-w-[90vw] -translate-x-1/2 items-center gap-2 overflow-x-auto overflow-y-hidden pointer-events-auto scrollbar-hide md:bottom-10 md:gap-4">
+            <TimeController />
+          </div>
+        )}
+        <div className="pointer-events-none absolute top-4 right-4 z-50 flex max-h-[90vh] w-[calc(100%-2rem)] max-w-sm flex-col gap-4 overflow-y-auto md:top-10 md:right-10 md:w-auto md:gap-6">
           <PlanetInfoCard />
           {focusedCity ? (
             <CityDataCard />
@@ -48,12 +52,13 @@ export default function Home() {
         </div>
 
         {introStarted && (
-          <div className="absolute bottom-24 left-0 p-10">
-            <h1 className="mb-4 text-6xl font-bold tracking-tighter">
-              Planetary Anatomy
+          <div className="pointer-events-none absolute top-4 left-4 z-50 md:top-10 md:left-10">
+            <h1 className="mb-2 text-2xl font-bold tracking-tighter md:mb-4 md:text-4xl">
+              Twenty4Orbit
             </h1>
-            <p className="max-w-md text-xl text-gray-400">
-              Scroll to peel away the layers and explore the core.
+            <p className="max-w-md text-sm text-gray-400 md:text-xl">
+              Explore the solar system with real-time Keplerian physics and
+              volumetric rendering.
             </p>
           </div>
         )}
@@ -63,13 +68,13 @@ export default function Home() {
             <p className="mb-3 text-xs uppercase tracking-[0.5em] text-white/50">
               A journey through
             </p>
-            <h1 className="text-center text-5xl font-bold tracking-[0.35em] sm:text-6xl">
-              PLANETARY ANATOMY
+            <h1 className="px-4 text-center text-3xl font-bold tracking-[0.2em] sm:text-5xl sm:tracking-[0.35em] md:text-6xl">
+              TWENTY4ORBIT
             </h1>
             <button
               type="button"
               onClick={() => setIntroStarted(true)}
-              className="mt-12 rounded-full border border-white/30 px-10 py-3 text-xs font-medium uppercase tracking-[0.35em] text-white transition-all duration-300 hover:border-white hover:bg-white/10"
+              className="mt-12 rounded-full border border-white/30 px-8 py-3 text-xs font-medium uppercase tracking-[0.35em] text-white transition-all duration-300 hover:border-white hover:bg-white/10 sm:px-10"
             >
               Begin Journey
             </button>

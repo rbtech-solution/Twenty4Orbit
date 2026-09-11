@@ -37,3 +37,12 @@ body {
 .ui-fade-in {
   animation: ui-fade-in 1s ease-out 3s both;
 }
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

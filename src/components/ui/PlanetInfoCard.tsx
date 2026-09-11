@@ -28,7 +28,7 @@ function LayerToggle({
       onClick={() => onChange(!checked)}
       className="flex w-full items-center justify-between gap-4 rounded-lg border border-white/10 bg-white/5 px-3 py-2.5 text-left transition-colors hover:border-cyan-500/30 hover:bg-white/[0.08]"
     >
-      <span className="text-sm text-white/85">{label}</span>
+      <span className="text-sm text-white/85 md:text-base">{label}</span>
       <span
         className={`relative h-5 w-9 shrink-0 rounded-full transition-colors ${
           checked ? "bg-cyan-400" : "bg-white/20"
@@ -61,13 +61,13 @@ export default function PlanetInfoCard() {
   ];
 
   return (
-    <div className="pointer-events-auto w-80 rounded-xl border border-cyan-500/30 bg-black/60 p-6 text-white shadow-[0_0_40px_rgba(34,211,238,0.12)] backdrop-blur-md">
+    <div className="pointer-events-auto w-full rounded-xl border border-cyan-500/30 bg-black/60 p-4 text-white shadow-[0_0_40px_rgba(34,211,238,0.12)] backdrop-blur-md md:p-6">
       <div className="mb-4 flex items-start justify-between gap-4">
         <div>
           <p className="text-[10px] uppercase tracking-[0.28em] text-cyan-400/70">
             Target lock
           </p>
-          <h2 className="mt-1 text-3xl font-semibold tracking-tight">
+          <h2 className="mt-1 text-xl font-semibold tracking-tight md:text-3xl">
             {selectedPlanet.name}
           </h2>
         </div>
@@ -82,7 +82,7 @@ export default function PlanetInfoCard() {
       </div>
 
       {selectedPlanet.description && (
-        <p className="mb-5 text-sm leading-relaxed text-white/65">
+        <p className="mb-5 text-sm leading-relaxed text-white/65 md:text-base">
           {selectedPlanet.description}
         </p>
       )}
@@ -93,7 +93,7 @@ export default function PlanetInfoCard() {
             <dt className="text-[10px] uppercase tracking-[0.2em] text-cyan-400/60">
               {stat.label}
             </dt>
-            <dd className="mt-1 text-sm text-white/90">{stat.value}</dd>
+            <dd className="mt-1 text-sm text-white/90 md:text-base">{stat.value}</dd>
           </div>
         ))}
       </dl>

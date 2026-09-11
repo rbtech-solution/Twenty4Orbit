@@ -26,7 +26,7 @@ export default function TimeController() {
   const isPaused = timeScale === 0;
 
   return (
-    <div className="pointer-events-auto absolute bottom-10 left-1/2 flex max-w-[calc(100vw-2rem)] -translate-x-1/2 items-center gap-1.5 overflow-x-auto rounded-full border border-white/10 bg-black/60 p-1.5 backdrop-blur-md">
+    <div className="flex items-center gap-1.5 rounded-full border border-white/10 bg-black/60 p-1.5 backdrop-blur-md">
       <button
         type="button"
         onClick={triggerLiveSync}
